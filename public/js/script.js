@@ -92,3 +92,49 @@ const tweet1 = {
   for (let i = 0; i <= 9; i++) {
     console.log('Notify friends', i)
   }
+
+
+  // 6/6/24 Functions
+// defining functions
+function login(username, password) {
+  if (username == 'joy' && password == '1234') {
+    return 'user is logged in!';
+  } else if (username != 'joy' ) {
+    return 'Invalid username!';
+  } else if (password != '1234'){
+    return 'Invalid password!';
+  } else {
+    return 'Invalid username or password';
+  }
+} 
+// invoking functions
+login('joy', '1234');
+
+// Basic arithmetic
+12+23;
+45-16;
+7*8;
+78/4;
+12 % 5
+
+// Comparison operators
+2 == '2';
+2 === '2';
+3 !== 2;
+3 !== 3;
+ 
+// Built-in Math functions
+Math.round(37 / 24);
+Math.floor(37 / 24);
+Math.ceil(37 / 24);
+Math.random();
+Math.max(78, 12, 98, 14, 89);
+Math.ceil(Math.random() * 100000);
+
+// Order of operations
+1 * 2 + 3 - 4 / 2 + 12
+2**3
+
+// Handling user inputs
+1200 + '250';
+1200 + Number('250');
