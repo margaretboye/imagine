@@ -138,3 +138,30 @@ Math.ceil(Math.random() * 100000);
 // Handling user inputs
 1200 + '250';
 1200 + Number('250');
+
+
+// String concatenation 7/6/24
+const  firstname = 'Margaret';
+const  lastname = 'Boye';
+firstname + lastname;
+firstname + ' ' + lastname;
+firstname.trim() + ' ' + lastname.trim();
+
+// Template literal
+`${firstname.trim()} ${lastname.trim()}`;
+
+// String methods
+firstname.length;
+lastname.length;
+`${firstname.trim()} ${lastname.trim()}`.length;
+(firstname.trim() + ' ' + lastname.trim()).length;
+firstname.toUpperCase();
+lastname.charAt(3);
+firstname.charAt(5);
+`${firstname.trim()} ${lastname.trim()}`.charAt(0);
+`${firstname.trim().charAt(0)}${lastname.trim().charAt(0)}`;
+`${firstname.trim().charAt(0)} ${lastname.trim().charAt(0)}`;
+lastname.charAt(0) + firstname.charAt(0);
+
+// String conversion
+String(2014);
