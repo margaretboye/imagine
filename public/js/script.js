@@ -199,3 +199,43 @@ const alphabets = ['A', 'B', 'C', 'D'];
 alphabets;
 alphabets.join(' ');
 alphabets.join(' ').split(' ')
+
+
+// Write a function that will take firstname, lastname and will return fullname
+
+
+const user = {
+  firstname: 'joe',
+  lastname: 'ganner'
+}  
+function fullname(user){
+  return {
+    ...user,
+    fullname:`${user.firstname} ${user.lastname}`
+  }
+}
+  
+  fullname(user);
+
+// Array map 11/6/24
+const users = [
+  {firstname: 'joe', lastname: 'ganner'},
+  {firstname: 'mary', lastname: 'ray'},
+  {firstname: 'vida', lastname: 'mars'},
+  {firstname: 'bey', lastname: 'rash'},
+  {firstname: 'mars', lastname: 'maxwell'}
+]
+users.map(fullname);
+
+// Map and return squares of numbers
+function square(number){
+  return number ** 2;
+}
+const numbers = [0,1,2,3,4,5]
+numbers.map(square);
+
+// Filter and return even numbers
+function even(number) {
+  return number % 2  === 0;
+}
+numbers.filter(even);
